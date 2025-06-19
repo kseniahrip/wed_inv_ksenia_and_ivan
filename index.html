@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <header>
+        <div class="container header-content">
+            <h1>Мы женимся</h1>
+            <img class="names" src="images/фон.png">  
+        </div>
+              
+    </header>
+    
+    <!-- Основное содержание -->
+     
+        
+
+    <main class="main-content">
+        <div class="container">
+            <h1 class="h1-first">ДОРОГИЕ</h1>
+            <h1 class="h1-second">наши родные</h1>
+            <h1 class="h1-fird">и близкие</h1>
+            <p>Эмоции - это то, что делает нас живыми, а любовь дарит нам причину жить! Ваши поддержка, понимание, любовь и дружба всегда были важны для нашей пары. Именно поэтому в самый счастливый день нашей жизни мы хотим, чтобы вы были рядом с нами!</p>
+            <!-- О нас -->
+            <section class="section">
+                <p><img class="image-date" src="images/calendar.png"></p>
+                <p>сохраните дату: 16.08.2025</p>
+                <p><img class="photo1" src="images/photo1.png"></p>
+            </section>
+            
+            <!-- Детали мероприятия -->
+            <section class="section">
+                <h2>Детали мероприятия</h2>
+                <div class="details">
+                    <div class="detail-card">
+                        <h3>Церемония - 11:00</h3>
+                        <p>сбор гостей перед регистрацией 10:30</p>
+                        <p><img class="zags" src="images/zags.png"></p>
+                        <p>Центальный ЗАГС города Хабаровска</p>
+                        <p>ул. Пушкина, 62</p>
+                    </div>
+                    <div class="detail-card">
+                        <h3>Банкет - 17:00</h3>
+                        <p>сбор гостей - 16:30 (большая просьба не опаздывать)</p>
+                        <p><img class="zags" src="images/rest.png"></p>
+                        <p>Ресторан "Вечера"</p>
+                        <p>ул. Калинина, 94</p>
+                    </div>
+                </div>
+            </section>
+            <h2>важная информация</h2>
+            <p>Между церемонией и банкетом мероприятия не запланированы, поэтому мы отнесемся с понимаем, если вы не придете в ЗАГС, будем ждать вас на банкете</p>
+            
+            <p><h2 class="h1-gifts">ПОДАРКИ</h2></p>
+            <p>Ваше присутствие, отличное настроение и улыбки уже будут для нас подарком, но...</p>
+            <p><img class="photo1" src="images/photo2.png"></p>
+            <p>если вы задумываетесь о подарке, мы будем рады, если вы сделаете вклад в наш семейный бюджет. Это поможет нам осуществить наши общие мечты)</p>
+            <p><h2 class="h1-flowers">ЦВЕТЫ</h2></p>
+            <p>мы очень любим цветы (невеста больше само собой)</p>
+            <p></p>
+            <p>но пожалуйста, не дарите нам их, мы уедем отдыхать, а они будут грустить в одиночестве</p>
+            <p><h2>ФЭБРИКС</h2></p>
+            <p>к счастью дресс-кода нет, но будет здорово, если вы придете в одежде приглушенных тонов, чтобы у нас получились красивые фото (в общем главное - ничего красного или ярких оттенков розового, синего, зеленого или желтого)</p>
+            <p><h2 class="h1-gifts">ДИТЕЙЛС</h2></p>
+            <p>От всего сердца просим вас воздержаться от криков "горько", нам ничего горького не надо, пусть нам всю жизнь будет сладко</p>
+           <!-- Подтверждение присутствия -->
+            <section class="section">
+                <h2 class="h1-flowers">Подтвердите ваше присутствие</h2>
+                <p>Настоятельно просим ответить до 1 августа 2025</p>
+                <form id="rsvpForm" class="rsvp-form">
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Количество гостей</label>
+                        <select id="guests" name="guests" onchange="updateGuestFields()">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div id="guest-fields-container">
+                        <!-- Здесь будут динамически добавляться поля для имен гостей -->
+                    </div>
+                    <div class="form-group">
+                        <label for="attending">Вы придёте?</label>
+                        <select id="attending" name="attending">
+                            <option value="yes">С радостью приду!</option>
+                            <option value="no">К сожалению, не смогу</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Ваши пожелания (необязательно)</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <button type="submit">Отправить</button>
+                </form>
+                <div id="form-message" style="display: none; margin-top: 20px;"></div>
+            </section>
+        </div>
+    </main>
+    
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            <p>С любовью, Ксения и Иван</p>
+            <p>По всем вопросам: +7 (924) 103-62-20 - номер невесты</p>
+        </div>
+    </footer>
+
+     <script src="script.js"></script>
+
+</body>
+</html>
