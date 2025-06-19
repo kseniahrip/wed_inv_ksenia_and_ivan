@@ -116,6 +116,17 @@
             font-size: 1.3rem;
         }
     }
+
+    @media (max-width: 360px) {
+
+        .names {
+            width: 300px;
+        }
+        
+        .photo-caption {
+            font-size: 1.3rem;
+        }
+    }
         
         .date {
             font-size: clamp(1.2rem, 2vw, 1.8rem);
