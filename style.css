@@ -123,9 +123,14 @@
             width: 350px;
         }
         
-        .photo-caption {
-            font-size: 1.3rem;
+    }
+
+    @media (max-width: 400px) {
+
+        .names {
+            width: 390px;
         }
+        
     }
         
         .date {
