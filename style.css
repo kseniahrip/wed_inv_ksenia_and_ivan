@@ -94,14 +94,14 @@
         }
 
     .names {
-            width: 520px;
+            width: 690px;
             margin-right: 20px;
         }
     
     /* Адаптивность */
     @media (max-width: 768px) {
         .names {
-            width: 420px;
+            width: 580px;
         }
         
     }
@@ -109,7 +109,7 @@
     @media (max-width: 480px) {
 
         .names {
-            width: 370px;
+            width: 440px;
         }
         
         .photo-caption {
